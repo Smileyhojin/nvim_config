@@ -1,6 +1,6 @@
-# 💤 LazyVim_config
+# nvim_config
 
-Smileyhojin's nvim config, forked and modified from [LazyVim](https://github.com/LazyVim/starter).
+Smileyhojin's nvim config, forked and modified from 💤[LazyVim](https://github.com/LazyVim/starter).
 
 ## Installation
 
@@ -16,7 +16,7 @@ rm -rf ~/.cache/nvim
 To install this config,
 
 ```sh
-git clone https://github.com/Smileyhojin/LazyVim_config.git ~/.config/nvim
+git clone https://github.com/Smileyhojin/nvim_config.git ~/.config/nvim
 ```
 
 then execute `nvim`.
