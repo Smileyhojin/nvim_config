@@ -18,16 +18,18 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its default plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+
     -- extras (lazy.extras)
     { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.lang.toml" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.rust" },
-    -- { import = "lazyvim.plugins.extras.ai.claudecode" },
+    { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.ai.copilot" },
     { import = "lazyvim.plugins.extras.ai.sidekick" },
-    -- other plugins (direct implementations or change of configs)
+
+    -- other plugins (direct implementations or change of configs), located in `lua/plugins/*.lua`
     { import = "plugins" },
   },
   defaults = {

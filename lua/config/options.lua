@@ -4,6 +4,7 @@
 
 vim.lsp.inlay_hint.enable(true)
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+vim.g.autoformat = true
 
 -- Use OSC52 for clipboard (works over SSH transparently)
 vim.g.clipboard = {
@@ -13,8 +14,12 @@ vim.g.clipboard = {
     ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
   },
   paste = {
-    ["+"] = function() return vim.fn.split(vim.fn.getreg('"'), "\n") end,
-    ["*"] = function() return vim.fn.split(vim.fn.getreg('"'), "\n") end,
+    ["+"] = function()
+      return vim.fn.split(vim.fn.getreg('"'), "\n")
+    end,
+    ["*"] = function()
+      return vim.fn.split(vim.fn.getreg('"'), "\n")
+    end,
   },
 }
 vim.opt.clipboard = "unnamedplus"
